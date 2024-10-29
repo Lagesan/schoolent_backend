@@ -1,24 +1,14 @@
-var mysql      = require('mysql');
-var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : '1z2z3k405160798099',
-  database : 'schoolent'
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
 });
- 
-connection.connect();
- 
-var  sql = 'SELECT * FROM websites';
-//查
-connection.query(sql,function (err, result) {
-        if(err){
-          console.log('[SELECT ERROR] - ',err.message);
-          return;
-        }
- 
-       console.log('--------------------------SELECT----------------------------');
-       console.log(result);
-       console.log('------------------------------------------------------------\n\n');  
+app.get('/about', (req, res) => {
+  res.send('About Page');
 });
- 
-connection.end();
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`);
+});
