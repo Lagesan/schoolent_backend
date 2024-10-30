@@ -15,7 +15,8 @@
 <p align="left">
 <a href="https://github.com/Lagesan/schoolent_web/">
 
-![GofrontEnd](./gonfrontend.png)
+
+![GofrontEnd](./gofrontend.png)
 
 </a></p>
 </p>
