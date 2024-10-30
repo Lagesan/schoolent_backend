@@ -23,3 +23,6 @@
 # Schoolent Backend
 This is the introduction document of this project.
 In this project, we use the Express package of Node.js to deal with data.
+
+<br>
+For Observer Studio Developer, please pass the SSL verify as soon as possible.
